@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>Вход</h1>
+    {{#> Form}}
+        {{> Input label="Логин" }}
+        {{> Input label="Пароль" }}
+        {{> Button label="Авторизоваться" type="primary" page="chat"}}
+        {{> Button label="Пройти регистрацию" type="link" page="register"}}
+    {{/Form}}
+</div>
+<div class="errors">
+    {{> Button label="404 ошибка" type="link" page="error404"}}
+    {{> Button label="500 ошибка" type="link" page="error500"}}
+</div>
