@@ -1,0 +1,32 @@
+<div class="chat-tab">
+  {{> ChatHeader photo="src/assets/ac3.png" title="Ангелина" class="chat-tab__header"}}
+  <div class="chat-tab__content">
+    <div class="chat-tab__date">22 декабря</div>
+    <div class="message message__incoming">
+      <div class="message__text">
+        <p>Какое-то входящее сообщение</p>
+        <p>Какое-то входящее сообщение</p>
+      </div>
+      <img src="src/assets/photo.jpg">
+      <div class="message__time">11:58</div>
+    </div>
+    <div class="message message__incoming">
+      <img src="src/assets/photo.jpg">
+      <div class="message__time">11:58</div>
+    </div>
+    <div class="message message__outgoing">
+      <div class="message__text">
+        <p>Какое-то исходящее сообщение</p>
+      </div>
+      <div class="message__time">11:59</div>
+    </div>
+  </div>
+  <div class="chat-tab__footer">
+    {{> ButtonIcon type="icon" src="src/assets/clip.svg" class="chat-tab__button" height="28px" width="28px"}}
+    <input
+        class="chat-tab__input"
+        placeholder="Сообщение"
+    />
+    {{> ButtonIcon type="icon" src="src/assets/arrow.svg" class="chat-tab__arrow" height="11px" width="11px"}}
+  </div>
+</div>

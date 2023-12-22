@@ -13,5 +13,8 @@
 .errors {
   position: fixed;
   bottom: 50px;
-  right: 0;
+  right: 50px;
+}
+.errors .button {
+  text-align: right;
 }

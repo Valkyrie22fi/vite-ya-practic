@@ -1,7 +1,5 @@
 import Handlebars from 'handlebars';
 
-console.log(Handlebars)
-
 import * as Components from './components';
 import * as Pages from './pages';
 
@@ -10,12 +8,10 @@ const pages = {
   'login': [ Pages.LoginPage, {test: 'qwerty'} ],
   'register': [ Pages.RegisterPage ],
   'chat': [ Pages.ChatPage ],
+  'chatNull': [ Pages.ChatNullPage ],
   'error500': [ Pages.Error500Page ],
   'error404': [ Pages.Error404Page ],
 };
-
-console.log('Components', Components)
-console.log('Pages', Pages)
 
 Object.entries(Components).forEach(([ name, component ]) => {
   Handlebars.registerPartial(name, component);
