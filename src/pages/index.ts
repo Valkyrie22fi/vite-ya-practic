@@ -4,3 +4,6 @@ export {ChatPage} from './chat'
 export {ChatNullPage} from './chatNull'
 export {Error404Page} from './error404'
 export {Error500Page} from './error500'
+export {ProfilePage} from './profile'
+export {ProfileEditPage} from './profileEdit';
+export {ProfileEditPasswordPage} from './profileEditPassword';

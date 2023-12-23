@@ -11,6 +11,9 @@ const pages = {
   'chatNull': [ Pages.ChatNullPage ],
   'error500': [ Pages.Error500Page ],
   'error404': [ Pages.Error404Page ],
+  'profile': [ Pages.ProfilePage ],
+  'profileEdit': [ Pages.ProfileEditPage ],
+  'profileEditPassword': [ Pages.ProfileEditPasswordPage ],
 };
 
 Object.entries(Components).forEach(([ name, component ]) => {

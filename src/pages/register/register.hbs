@@ -1,13 +1,13 @@
 <div class="container">
     <h1>Регистрация</h1>
     {{#> Form}}
-        {{> Input label="Почта" }}
-        {{> Input label="Логин" }}
-        {{> Input label="Имя" }}
-        {{> Input label="Фамилия" }}
-        {{> Input label="Телефон" }}
-        {{> Input label="Пароль" }}
-        {{> Input label="Пароль (ещё раз)" }}
+        {{> Input label="Почта" type="email"}}
+        {{> Input label="Логин" type="text"}}
+        {{> Input label="Имя" type="text"}}
+        {{> Input label="Фамилия" type="text"}}
+        {{> Input label="Телефон" type="text"}}
+        {{> Input label="Пароль" type="password"}}
+        {{> Input label="Пароль (ещё раз)" type="password"}}
         {{> Button label="Зарегистрироваться" type="primary" page="chat"}}
         {{> Button label="Войти" type="link" page="login"}}
     {{/Form}}

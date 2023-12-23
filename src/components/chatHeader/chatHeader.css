@@ -14,6 +14,6 @@
   padding-left: 20px;
   padding-right: 20px;
 }
-.chat-header__button {
-  flex: 0 0 24px;
+.chat-header__content button {
+  background-color: inherit;
 }
