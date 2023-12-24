@@ -1,7 +1,7 @@
 import Handlebars from 'handlebars';
-import block1 from '../../assets/ac1.png'
-import block2 from '../../assets/ac2.png'
-import block3 from '../../assets/ac3.png'
+// import block1 from '../../assets/ac1.png'
+// import block2 from '../../assets/ac2.png'
+// import block3 from '../../assets/ac3.png'
 
 export { default as ChatList } from './chatList.hbs?raw';
 

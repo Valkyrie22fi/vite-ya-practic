@@ -48,11 +48,11 @@ Expecting `+E.join(", ")+", got '"+(this.terminals_[b]||b)+"'":F="Parse error on
         <p>Какое-то входящее сообщение</p>
         <p>Какое-то входящее сообщение</p>
       </div>
-      <img src="src/assets/photo.jpg">
+      <img src="src/assets/photo.jpg" alt="Картинка">
       <div class="message__time">11:58</div>
     </div>
     <div class="message message__incoming">
-      <img src="src/assets/photo.jpg">
+      <img src="src/assets/photo.jpg" alt="Картинка">
       <div class="message__time">11:58</div>
     </div>
     <div class="message message__outgoing">
@@ -73,7 +73,7 @@ Expecting `+E.join(", ")+", got '"+(this.terminals_[b]||b)+"'":F="Parse error on
 </div>`,Nn=`
 <div class="chat-header {{class}}">
     <div class="chat-header__image">
-        <img src="{{photo}}" height="48px" width="48px" />
+        <img src="{{photo}}" height="48px" width="48px" alt="Фото"/>
     </div>
     <div class="chat-header__content">
         <div class="chat-header__title">{{ title }}</div>
@@ -90,7 +90,7 @@ Expecting `+E.join(", ")+", got '"+(this.terminals_[b]||b)+"'":F="Parse error on
     </ul>
 </div>`;Ge.registerHelper("blocks",()=>[{name:"Карелина Милана",text:"Картинка",count:1,time:"10:35",avatar:Bn},{name:"Дука Роман",text:"Как погодка?",count:1,time:"10:35",avatar:Rn,active:!0},{name:"Дука Ангелина",text:"Что-то настроения нет(((",count:1,time:"10:35",avatar:M},{name:"Дука Ангелина",text:"Что-то настроения нет(((",count:1,time:"10:35",avatar:M},{name:"Дука Ангелина",text:"Что-то настроения нет(((",count:1,time:"10:35",avatar:M},{name:"Дука Ангелина",text:"Что-то настроения нет(((",count:1,time:"10:35",avatar:M},{name:"Дука Ангелина",text:"Что-то настроения нет(((",count:1,time:"10:35",avatar:M},{name:"Дука Ангелина",text:"Что-то настроения нет(((",count:1,time:"10:35",avatar:M},{name:"Дука Ангелина",text:"Что-то настроения нет(((",count:1,time:"10:35",avatar:M},{name:"Дука Ангелина",text:"Что-то настроения нет(((",count:1,time:"10:35",avatar:M},{name:"Дука Ангелина",text:"Что-то настроения нет(((",count:1,time:"10:35",avatar:M},{name:"Дука Ангелина",text:"Что-то настроения нет(((",count:1,time:"10:35",avatar:M},{name:"Дука Ангелина",text:"Что-то настроения нет(((",count:1,time:"10:35",avatar:M},{name:"Дука Ангелина",text:"Что-то настроения нет(((",count:1,time:"10:35",avatar:M},{name:"Дука Ангелина",text:"Что-то настроения нет(((",count:1,time:"10:35",avatar:M},{name:"Дука Ангелина",text:"Что-то настроения нет(((",count:1,time:"10:35",avatar:M},{name:"Дука Ангелина",text:"Что-то настроения нет(((",count:1,time:"10:35",avatar:M},{name:"Дука Ангелина",text:"Что-то настроения нет(((",count:1,time:"10:35",avatar:M}]);const Hn=`<div class="block {{#if active}}block_active{{/if}}">
   <div class="block__image">
-    <img src="{{avatar}}" height="48px" width="48px" />
+    <img src="{{avatar}}" height="48px" width="48px" alt="Фото"/>
   </div>
   <div class="block__content">
     <div class="block__title">{{ name }}</div>
@@ -120,12 +120,18 @@ Expecting `+E.join(", ")+", got '"+(this.terminals_[b]||b)+"'":F="Parse error on
         {{> Button label="Пройти регистрацию" type="link" page="register"}}
     {{/Form}}
 </div>
-<div class="errors">
-    {{> Button label="Пустой чат" type="link" page="chatNull"}}
-    {{> Button label="Чат" type="link" page="chat"}}
-    {{> Button label="404 ошибка" type="link" page="error404"}}
-    {{> Button label="500 ошибка" type="link" page="error500"}}
-</div>`,Vn=`<div class="container">
+<nav class="errors">
+    <ul>
+        <li>{{> Button label="Чат" type="link" page="chat"}}</li>
+        <li>{{> Button label="Пустой чат" type="link" page="chatNull"}}</li>
+        <li>{{> Button label="404 ошибка" type="link" page="error404"}}</li>
+        <li>{{> Button label="500 ошибка" type="link" page="error500"}}</li>
+        <li>{{> Button label="Профайл" type="link" page="profile"}}</li>
+        <li>{{> Button label="Профайл редактирование" type="link" page="profileEdit"}}</li>
+        <li>{{> Button label="Профайл редактирование пароля" type="link" page="profileEditPassword"}}</li>
+        <li>{{> Button label="Регистрация" type="link" page="register"}}</li>
+    </ul>
+</nav>`,Vn=`<div class="container">
     <h1>Регистрация</h1>
     {{#> Form}}
         {{> Input label="Почта" type="email"}}
@@ -164,7 +170,7 @@ Expecting `+E.join(", ")+", got '"+(this.terminals_[b]||b)+"'":F="Parse error on
     <div class="profile__content">
         <div class="profile__block">
             <div class="profile__photo photo">
-                <img src="src/assets/acMain.png" height="100px" width="100px" />
+                <img src="src/assets/acMain.png" height="100px" width="100px" alt="Картинка"/>
             </div>
             {{#> Form}}
                 {{> Input label="Почта" value="test@ya.ru" type="mail" disabled="disabled"}}
@@ -186,9 +192,9 @@ Expecting `+E.join(", ")+", got '"+(this.terminals_[b]||b)+"'":F="Parse error on
     <div class="profile__content">
         <div class="profile__block">
             <div class="profile__photo photo">
-                <img src="src/assets/acMain.png" height="100px" width="100px" />
+                <img src="src/assets/acMain.png" height="100px" width="100px" alt="Картинка"/>
                 <div class="photo__edit">
-                    <img src="src/assets/edit.svg" height="30px" width="30px" />
+                    <img src="src/assets/edit.svg" height="30px" width="30px" alt="Картинка"/>
                 </div>
             </div>
             {{#> Form}}
@@ -209,7 +215,7 @@ Expecting `+E.join(", ")+", got '"+(this.terminals_[b]||b)+"'":F="Parse error on
     <div class="profile__content">
         <div class="profile__block">
             <div class="profile__photo photo">
-                <img src="src/assets/acMain.png" height="100px" width="100px" />
+                <img src="src/assets/acMain.png" height="100px" width="100px" alt="Картинка"/>
             </div>
             {{#> Form}}
                 {{> Input label="Старый пароль" value="qwerty" type="password"}}
