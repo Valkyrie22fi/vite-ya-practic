@@ -14,3 +14,6 @@
 .profile__photo:hover .photo__edit {
   display: flex;
 }
+.photo__input {
+  display: none;
+}

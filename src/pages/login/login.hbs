@@ -1,10 +1,10 @@
 <div class="container">
     <h1>Вход</h1>
     {{#> Form}}
-        {{> Input label="Логин" type="text"}}
-        {{> Input label="Пароль" type="password"}}
-        {{> Button label="Авторизоваться" type="primary" page="chat"}}
-        {{> Button label="Пройти регистрацию" type="link" page="register"}}
+        {{> Input label="Логин" type="text" name="login"}}
+        {{> Input label="Пароль" type="password" name="password"}}
+        {{> Button label="Вход" type="primary" page="chat"}}
+        {{> Button label="Регистрация" type="link" page="register"}}
     {{/Form}}
 </div>
 <nav class="errors">
